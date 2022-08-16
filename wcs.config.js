@@ -45,7 +45,9 @@ module.exports = {
       trigger: ["checkout", "pull", "setup"],
     },
   },
-
+  staticDeploy: {
+    include: ['./src/**/*']
+  },
   /**
    * Configures how SVG assets load in WCS.
    * Refer to https://component-studio.wixanswers.com/en/article/kb38231 for more information.
