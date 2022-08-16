@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./transaction.module.scss";
-import { Callout } from "../callout/callout";
-import { Icon } from "../icon/Icon";
+import { Icon } from "@blueprintjs/core";
 import { IconName } from "@blueprintjs/icons";
 import TransactionHistory_module_scss from "../transaction-history/transaction-history.module.scss";
 

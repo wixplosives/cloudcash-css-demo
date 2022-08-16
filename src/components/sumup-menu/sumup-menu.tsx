@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./sumup-menu.module.scss";
-import { Icon } from "../icon/Icon";
+import { Icon } from "@blueprintjs/core";
 import type { IconName } from "@blueprintjs/icons";
 
 export interface SumupMenuProps {

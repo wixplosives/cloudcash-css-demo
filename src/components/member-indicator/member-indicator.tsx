@@ -1,6 +1,5 @@
 import React from "react";
-import { Text } from "../text/text";
-import { Icon } from "../icon/Icon";
+import { Text, Icon } from "@blueprintjs/core";
 
 export interface MemberIndicatorProps {
   className?: string;

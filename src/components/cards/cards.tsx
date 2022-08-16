@@ -2,8 +2,7 @@ import React from "react";
 import styles from "./cards.module.scss";
 import { Statistics } from "../statistics/statistics";
 import { SwitchComposite } from "../switch-composite/switch-composite";
-import { Card } from "../card/card";
-import { Divider } from "../divider/divider";
+import { Card, Divider } from "@blueprintjs/core";
 import { CreditCard, CardInformation } from "../credit-card/credit-card";
 
 export interface CardsProps {

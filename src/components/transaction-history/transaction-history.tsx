@@ -1,9 +1,8 @@
 import React from "react";
 import styles from "./transaction-history.module.scss";
-import { Callout } from "../callout/callout";
 import { Transaction } from "../transaction/transaction";
 import { Title } from "../title/title";
-import { Card } from "../card/card";
+import { Card } from "@blueprintjs/core";
 
 export interface TransactionHistoryProps {
   className?: string;

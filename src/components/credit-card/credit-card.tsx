@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./credit-card.module.scss";
-import { Card } from "../card/card";
+import { Card } from "@blueprintjs/core";
 
 export interface CardInformation {
   cardHolder: string;

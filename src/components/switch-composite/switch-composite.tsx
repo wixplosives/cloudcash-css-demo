@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./switch-composite.module.scss";
-import { Switch } from "../switch/switch";
+import { Switch } from "@blueprintjs/core";
 
 export interface SwitchCompositeProps {
   className?: string;

@@ -1,8 +1,7 @@
 import React from "react";
 import styles from "./page-header.module.scss";
 import { MembershipIndicator } from "../membership-indicator/membership-indicator";
-import { Text } from "../text/text";
-import MembershipIndicator_module_scss from "../membership-indicator/membership-indicator.module.scss";
+import { Text } from "@blueprintjs/core";
 
 export interface PageHeaderProps {
   className?: string;

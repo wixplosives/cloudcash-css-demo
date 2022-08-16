@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Blueprint",
+    "components": [
+      {
+        "filePath": "@blueprintjs/core",
+        "exportName": "Button",
+        "name": "Button"
+      },
+      {
+        "filePath": "@blueprintjs/core",
+        "exportName": "Card",
+        "name": "Card"
+      },
+      {
+        "filePath": "@blueprintjs/core",
+        "exportName": "Checkbox",
+        "name": "Checkbox"
+      },
+      {
+        "filePath": "@blueprintjs/core",
+        "exportName": "Divider",
+        "name": "Divider"
+      },
+      {
+        "filePath": "@blueprintjs/core",
+        "exportName": "Icon",
+        "name": "Icon"
+      },
+      {
+        "filePath": "@blueprintjs/core",
+        "exportName": "ProgressBar",
+        "name": "ProgressBar"
+      },
+      {
+        "filePath": "@blueprintjs/core",
+        "exportName": "Switch",
+        "name": "Switch"
+      },
+      {
+        "filePath": "@blueprintjs/core",
+        "exportName": "Text",
+        "name": "Text"
+      }
+    ]
+  }
+]
