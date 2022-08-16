@@ -1,0 +1,43 @@
+.stat_root {
+  flex-direction: column;
+}
+
+.stat_content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.header {
+  font: 700 18px Roboto;
+  line-height: 38px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.description {
+  color: #aeaeae;
+  line-height: 14px;
+}
+
+.dollar {
+  align-items: flex-end;
+  justify-content: flex-end;
+  line-height: 20px;
+}
+
+.balance .header {
+  color: var(--orange);
+  font-size: 18px;
+}
+
+.income .header {
+  color: var(--dark-blue);
+}
+
+.outcome .header {
+  color: var(--red);
+}

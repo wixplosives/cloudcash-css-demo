@@ -1,0 +1,39 @@
+.tran_root {
+  padding: 4px 0px;
+}
+
+.tr {
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tran_receiverColumn {
+  width: 240px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tran_typeColumn {
+  width: 120px;
+  color: #c7c7c7;
+}
+
+.tran_dateColumn {
+  width: 120px;
+  color: #c7c7c7;
+}
+
+.tran_amountColumn {
+  display: flex;
+  justify-content: flex-end;
+  width: 60px;
+}
+
+.tran_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./switch-composite.module.scss";
+import "./switch-composite.css";
 import { Switch } from "@blueprintjs/core";
 
 export interface SwitchCompositeProps {
@@ -14,9 +14,9 @@ export const SwitchComposite: React.FC<SwitchCompositeProps> = ({
   const [active, setActive] = useState(false);
 
   return (
-    <div className={styles.root}>
+    <div className={"swch_root" + " " + className}>
       <Switch
-        className={styles.switch}
+        className={"switch"}
         checked={active}
         onChange={() => setActive(!active)}
       />

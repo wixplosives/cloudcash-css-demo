@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./statistics.module.scss";
+import "./statistics.css";
 
 export interface StatisticsProps {
   className?: string;
@@ -10,21 +10,22 @@ export interface StatisticsProps {
 export const Statistics: React.FC<StatisticsProps> = ({
   type = "balance",
   price,
+  className
 }) => {
-  const rootClassName = styles[type];
+  const rootClassName = type || "";
   const labels = {
     balance: "Balance",
     income: "Income",
     outcome: "Outcome",
   };
   return (
-    <div className={`${styles.root} ${rootClassName}`}>
-      <div className={styles.content}>
-        <div className={styles.header}>
-          <div className={styles.dollar}>$</div>
+    <div className={"stat_root" + " " + rootClassName + " " + className}>
+      <div className={"stat_content"}>
+        <div className={"header"}>
+          <div className={"dollar"}>$</div>
           {price}
         </div>
-        <div className={styles.description}>{labels[type]}</div>
+        <div className={"description"}>{labels[type]}</div>
       </div>
     </div>
   );

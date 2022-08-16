@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./page-header.module.scss";
+import "./page-header.css";
 import { MembershipIndicator } from "../membership-indicator/membership-indicator";
 import { Text } from "@blueprintjs/core";
 
@@ -9,13 +9,13 @@ export interface PageHeaderProps {
 
 export const PageHeader: React.FC<PageHeaderProps> = ({ className }) => {
   return (
-    <div className={styles.root}>
+    <div className={"page_root" + " " + className}>
       <div
-        className={`${styles.headerContainer} ${styles.headerContainer} ${styles.moreSpecific}`}
+        className={"headerContainer moreSpecific"}
       >
         <div>
-          <Text className={styles.pageHeader}>Weekly sumup</Text>
-          <Text className={styles.pageSubHeader}>
+          <Text className={"pageHeader"}>Weekly sumup</Text>
+          <Text className={"pageSubHeader"}>
             Get summary of your weekly online transactions here.
           </Text>
         </div>

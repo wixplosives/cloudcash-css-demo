@@ -1,0 +1,24 @@
+.titl_root {}
+
+.titl_receiverColumn {
+  width: 240px;
+}
+
+.typeColumn {
+  width: 120px;
+}
+
+.titl_dateColumn {
+  width: 120px;
+}
+
+.titl_amountColumn {
+  display: flex;
+  justify-content: flex-end;
+  width: 60px;
+}
+
+.titl_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}

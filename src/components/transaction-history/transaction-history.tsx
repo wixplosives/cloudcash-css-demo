@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./transaction-history.module.scss";
+import "./transaction-history.css";
 import { Transaction } from "../transaction/transaction";
 import { Title } from "../title/title";
 import { Card } from "@blueprintjs/core";
@@ -12,10 +12,10 @@ export const TransactionHistory: React.FC<TransactionHistoryProps> = ({
   className,
 }) => {
   return (
-    <div className={`${styles.root} ${styles.transactionHistoryCard}`}>
-      <Card elevation={2} className={styles.transactionHistoryCard}>
-        <h1 className={styles.transactionHistoryHeader}>Transaction history</h1>
-        <Title className={styles.tableTitle} />
+    <div className={"root transactionHistoryCard" + " " + className}>
+      <Card elevation={2} className={"transactionHistoryCard"}>
+        <h1 className={"transactionHistoryHeader"}>Transaction history</h1>
+        <Title className={"tableTitle"} />
         <table>
           <Transaction
             icon="shopping-cart"

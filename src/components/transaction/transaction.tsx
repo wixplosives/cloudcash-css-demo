@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./transaction.module.scss";
+import "./transaction.css";
 import { Icon } from "@blueprintjs/core";
 import { IconName } from "@blueprintjs/icons";
-import TransactionHistory_module_scss from "../transaction-history/transaction-history.module.scss";
+import "../transaction-history/transaction-history.css";
 
 export interface TransactionProps {
   className?: string;
@@ -22,25 +22,25 @@ export const Transaction: React.FC<TransactionProps> = ({
   amount,
 }) => {
   return (
-    <div className={`${styles.root} ${styles.row}`}>
-      <tr className={styles.tr}>
-        <td className={`${styles.receiverColumn}`}>
+    <div className={"tran_root tran_row" + " " + className}>
+      <tr className={"tr"}>
+        <td className={"tran_receiverColumn"}>
           <div>
             <Icon
               icon={icon as IconName}
               size={12}
-              className={TransactionHistory_module_scss.Icon}
+              className={"icon"}
             />
           </div>
           <span>{receiver}</span>
         </td>
-        <td className={styles.typeColumn}>
+        <td className={"typeColumn"}>
           <span>{typeName}</span>
         </td>
-        <td className={styles.dateColumn}>
+        <td className={"dateColumn"}>
           <span>{date}</span>
         </td>
-        <td className={styles.amountColumn}>
+        <td className={"amountColumn"}>
           $<span>{amount}</span>
         </td>
       </tr>

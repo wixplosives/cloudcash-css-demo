@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./sumup-menu.module.scss";
+import "./sumup-menu.css";
 import { Icon } from "@blueprintjs/core";
 import type { IconName } from "@blueprintjs/icons";
 
@@ -13,15 +13,13 @@ export const SumupMenu: React.FC<SumupMenuProps> = ({
   items = [],
 }) => {
   return (
-    <div className={`${styles.root} ${className}`}>
+    <div className={"sump_root" + " " +className}>
       {items.map((item) => (
         <div
           key={item.text}
-          className={`${styles.menuItem} ${
-            item.selected ? styles.selected : ""
-          }`}
+          className={"menuItem" + (item.selected ? " selected" : "")}
         >
-          <Icon icon={item.icon} className={styles.icon} />
+          <Icon icon={item.icon} className={"sump_icon"} />
           {item.text}
         </div>
       ))}

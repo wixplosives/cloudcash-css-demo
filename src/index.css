@@ -1,3 +1,5 @@
+@import "./theme/globals.css";
+@import "@blueprintjs/core/lib/css/blueprint.css";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body {

@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./title.module.scss";
-import TransactionHistory_module_scss from "../transaction-history/transaction-history.module.scss";
+import "./title.css";
+import "../transaction-history/transaction-history.css";
 
 export interface TitleProps {
   className?: string;
@@ -9,19 +9,19 @@ export interface TitleProps {
 export const Title: React.FC<TitleProps> = ({ className }) => {
   return (
     <div
-      className={`${styles.root} ${styles.row} ${TransactionHistory_module_scss.tableTitle}`}
+      className={"titl_root titl_row tableTitle" + " " + className}
     >
-      <tr className={styles.tr}>
-        <td className={`${styles.receiverColumn}`}>
+      <tr className={"tr"}>
+        <td className={"titl_receiverColumn"}>
           <span>Reciever</span>
         </td>
-        <td className={styles.typeColumn}>
+        <td className={"titl_typeColumn"}>
           <span>Type</span>
         </td>
-        <td className={styles.dateColumn}>
+        <td className={"titl_dateColumn"}>
           <span>Date</span>
         </td>
-        <td className={styles.amountColumn}>
+        <td className={"titl_amountColumn"}>
           <span>Amount</span>
         </td>
       </tr>
