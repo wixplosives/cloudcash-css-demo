@@ -1,0 +1,25 @@
+@import "../../theme/colors.module.scss";
+
+.root {
+}
+
+.headerContainer {
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0px;
+  display: flex;
+}
+
+.pageHeader {
+  font-size: 42px;
+  font-weight: 600;
+  font-family: Roboto;
+  color: $dark-grey;
+}
+
+.pageSubHeader {
+  font-size: 16px;
+  font-family: Roboto;
+  color: $dark;
+}
