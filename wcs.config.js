@@ -46,7 +46,7 @@ module.exports = {
     },
   },
   staticDeploy: {
-    include: ['./src/**/*']
+    include: ['./src/**/*', './wcs-external-components.json']
   },
   /**
    * Configures how SVG assets load in WCS.
