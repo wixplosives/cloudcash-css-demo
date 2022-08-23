@@ -7,7 +7,7 @@ export default createBoard({
   Board: () => (
     <Cards
       incomePrice={1500}
-      outcomePrice={350}
+      expensesPrice={350}
       balancePrice={20}
       cardInfo={{
         cardHolder: "Omer Kenet ",

@@ -4,19 +4,19 @@ import "./statistics.css";
 export interface StatisticsProps {
   className?: string;
   price?: number;
-  type?: "balance" | "income" | "outcome";
+  type?: "balance" | "income" | "expenses";
 }
 
 export const Statistics: React.FC<StatisticsProps> = ({
   type = "balance",
   price,
-  className
+  className,
 }) => {
   const rootClassName = type || "";
   const labels = {
     balance: "Balance",
     income: "Income",
-    outcome: "Outcome",
+    expenses: "Expenses",
   };
   return (
     <div className={"stat_root" + " " + rootClassName + " " + className}>

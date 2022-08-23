@@ -9,16 +9,16 @@ export interface CardsProps {
   className?: string;
   balancePrice?: number;
   incomePrice?: number;
-  outcomePrice?: number;
+  expensesPrice?: number;
   cardInfo: CardInformation;
 }
 
 export const Cards: React.FC<CardsProps> = ({
-  outcomePrice,
+  expensesPrice,
   incomePrice,
   balancePrice,
   cardInfo,
-  className
+  className,
 }) => {
   return (
     <div className={"crds_root" + " " + className}>
@@ -32,7 +32,7 @@ export const Cards: React.FC<CardsProps> = ({
           <div className={"right"}>
             <Statistics price={balancePrice} type="balance" />
             <Statistics price={incomePrice} type="income" />
-            <Statistics price={outcomePrice} type="outcome" />
+            <Statistics price={expensesPrice} type="expenses" />
             <SwitchComposite />
           </div>
         </div>
